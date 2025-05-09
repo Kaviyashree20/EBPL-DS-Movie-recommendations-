@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Movie Recommendation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>AI-Driven Movie Recommendation System</h1>
+        <p>Find your next favorite movie with personalized recommendations!</p>
+    </header>
 
+    <section id="user-input">
+        <h2>Enter your preferences:</h2>
+        <form id="preferences-form">
+            <label for="genre">Favorite Genre:</label>
+            <select id="genre" name="genre">
+                <option value="action">Action</option>
+                <option value="comedy">Comedy</option>
+                <option value="drama">Drama</option>
+                <option value="horror">Horror</option>
+                <option value="romance">Romance</option>
+                <option value="sci-fi">Sci-Fi</option>
+            </select><br>
+
+            <label for="mood">Mood:</label>
+            <select id="mood" name="mood">
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="adventurous">Adventurous</option>
+                <option value="mysterious">Mysterious</option>
+                <option value="scary">Scary</option>
+            </select><br>
+
+            <label for="release-year">Preferred Release Year:</label>
+            <input type="number" id="release-year" name="release-year" min="1900" max="2025"><br>
+
+            <button type="submit" id="submit-btn">Get Recommendations</button>
+        </form>
+    </section>
+
+    <section id="movie-recommendations" style="display:none;">
+        <h2>Recommended Movies:</h2>
+        <ul id="movies-list"></ul>
+    </section>
+
+    <footer>
+        <p>Powered by AI - Movie Matchmaking System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
